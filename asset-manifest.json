@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a67ed12b.css",
-    "main.js": "/static/js/main.bfe80289.js",
+    "main.js": "/static/js/main.e269ad03.js",
+    "static/media/hindustan-times.PNG": "/static/media/hindustan-times.009f0a6b72e0fc52c6a9.PNG",
+    "static/media/indiamart.PNG": "/static/media/indiamart.1fe32501e5ded3919fba.PNG",
     "static/media/uboric-clone.PNG": "/static/media/uboric-clone.0be369cc8f80c7650ecb.PNG",
     "static/media/ExpressJS.png": "/static/media/ExpressJS.612bf19e2768967b02d9.png",
     "index.html": "/index.html",
     "main.a67ed12b.css.map": "/static/css/main.a67ed12b.css.map",
-    "main.bfe80289.js.map": "/static/js/main.bfe80289.js.map"
+    "main.e269ad03.js.map": "/static/js/main.e269ad03.js.map"
   },
   "entrypoints": [
     "static/css/main.a67ed12b.css",
-    "static/js/main.bfe80289.js"
+    "static/js/main.e269ad03.js"
   ]
 }
