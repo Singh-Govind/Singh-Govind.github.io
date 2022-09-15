@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.04316a4c.js",
+    "main.css": "/static/css/main.a67ed12b.css",
+    "main.js": "/static/js/main.bfe80289.js",
+    "static/media/uboric-clone.PNG": "/static/media/uboric-clone.0be369cc8f80c7650ecb.PNG",
+    "static/media/ExpressJS.png": "/static/media/ExpressJS.612bf19e2768967b02d9.png",
     "index.html": "/index.html",
-    "main.04316a4c.js.map": "/static/js/main.04316a4c.js.map"
+    "main.a67ed12b.css.map": "/static/css/main.a67ed12b.css.map",
+    "main.bfe80289.js.map": "/static/js/main.bfe80289.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.04316a4c.js"
+    "static/css/main.a67ed12b.css",
+    "static/js/main.bfe80289.js"
   ]
 }
