@@ -8,32 +8,18 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaUserSecret } from "react-icons/fa";
 import Govind from "../assets/images/Govind.jpg";
 import SectionTitle from "../Helper/SectionTitle";
+import Stats from "./Stats";
+// import ReactTooltip from "react-tooltip";
 
 export default function About() {
   const { colorMode } = useColorMode();
 
   return (
     <>
-      {/* <Flex
-        justifyContent={{ base: "center", lg: "flex-start", md: "flex-start" }}
-      >
-        <span
-          style={{
-            display: "inline-block",
-            marginLeft: { base: "30%", xl: "auto", lg: "left", md: "left" },
-            marginTop: "2rem",
-            fontSize: "2rem",
-            borderBottom: "5px solid",
-            textAlign: { base: "center", xl: "left", lg: "left", md: "left" },
-          }}
-        >
-          About Me
-        </span>
-      </Flex> */}
-      <SectionTitle title="About Me" />
+      <SectionTitle title="About Me" IconDetails={FaUserSecret} />
       <Flex
         flexDirection={{
           base: "column",
@@ -91,19 +77,19 @@ export default function About() {
             }}
             fontSize={"lg"}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem
-            possimus, iste debitis hic, dolore explicabo, ullam optio ab quaerat
-            nulla sint excepturi aspernatur. Quibusdam accusamus cumque quaerat
-            voluptas nesciunt voluptatibus ad, architecto
+            Full-Stack Web Developer with the ability to learn and collaborate
+            in rapidly changing environments and compositions. Worked through
+            1000+ hours of Bootcamp structure learning JavaScript, Node.Js,
+            React.Js, MongoDB, Express, HTML5, and CSS3.
           </Text>
           <Text
             sx={{
-              margin: "2rem auto 0.6rem auto",
+              margin: "2.5rem auto 1.5rem auto",
               fontSize: "1.5rem",
               fontWeight: "bold",
             }}
           >
-            Let's Connect
+            <span style={{ borderBottom: "2px solid" }}>Let's Connect</span>
           </Text>
           <Flex
             sx={{
@@ -149,6 +135,7 @@ export default function About() {
           />
         </Box>
       </Flex>
+      <Stats />
     </>
   );
 }

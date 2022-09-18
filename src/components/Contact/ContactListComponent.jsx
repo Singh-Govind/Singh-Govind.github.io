@@ -1,6 +1,11 @@
 import { Button, Flex, Link, Text } from "@chakra-ui/react";
 
-export default function ContactListComponent({ title, linkurl, IconDetail }) {
+export default function ContactListComponent({
+  title,
+  linkurl,
+  IconDetail,
+  linkdesc,
+}) {
   return (
     <>
       <Flex
@@ -20,7 +25,21 @@ export default function ContactListComponent({ title, linkurl, IconDetail }) {
           target="_blank"
           _hover={{ textDecoration: "none" }}
         >
-          <Button colorScheme={"green"}>Link to {title}</Button>
+          <Text
+            fontSize={{ base: "0.8rem", xl: "1.2rem", lg: "1rem", md: "1rem" }}
+            sx={{
+              backgroundColor: "green.400",
+              color: "white",
+              padding: "0.5rem 1rem",
+              transition: "all 0.2s ease-in-out",
+              _hover: {
+                textDecoration: "underline",
+                backgroundColor: "green.600",
+              },
+            }}
+          >
+            {linkdesc}
+          </Text>
         </Link>
       </Flex>
     </>

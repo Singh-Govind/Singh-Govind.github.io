@@ -12,6 +12,7 @@ export const main_flex_style = {
     md: "center",
     sm: "center",
   },
+  alignItems: "center",
   flexDirection: { ...flexProperties },
   _hover: {
     boxShadow:

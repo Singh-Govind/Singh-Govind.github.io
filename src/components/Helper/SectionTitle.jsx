@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react";
+import { BsBookFill } from "react-icons/bs";
 
-export default function SectionTitle({ title }) {
+export default function SectionTitle({ title, IconDetails = BsBookFill }) {
   return (
     <Flex
       justifyContent={{ base: "center", lg: "flex-start", md: "flex-start" }}
@@ -15,7 +16,10 @@ export default function SectionTitle({ title }) {
           textAlign: { base: "center", xl: "left", lg: "left", md: "left" },
         }}
       >
-        {title}
+        <Flex alignItems="center" gap="0.5rem" textTransform="uppercase">
+          <IconDetails size="2rem" />
+          {title}
+        </Flex>
       </span>
     </Flex>
   );

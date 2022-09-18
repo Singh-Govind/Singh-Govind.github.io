@@ -6,7 +6,7 @@ export const projectList = [
   {
     id: 1,
     project_title: "Indiamart - clone",
-    desc: "This is a collaborative project with 4 other developers. It is an ecommerce website where you will be able to search products, filter through the products and also sort it by price.",
+    desc: "This was a collabrative project in which I have created the navbar, search functionality and implemented login/logout button functionty which was created by another developer.",
     tech_stack: ["JavaScript", "HTML", "Json Server", "CSS"],
     dp_link: "https://realindiamart.netlify.app/",
     gt_link: "https://github.com/raus376/IndiaMart_Website",
@@ -16,7 +16,7 @@ export const projectList = [
   {
     id: 2,
     project_title: "Uboric - clone",
-    desc: "This is a clone of an ecommerce website uboric.com. it has features like sorting products by price, filtering, adding to cart, and searching.",
+    desc: "This is an individual project in which I have built the clone of an ecommerce website. In this website I have implemented login/logout page, a filter option to filter products and sorting functionality to sort by price. Also added add to cart function and a card page.",
     tech_stack: ["React", "Chakra-UI", "Json Server"],
     dp_link: "https://uboric-clone-mu.vercel.app/",
     gt_link:

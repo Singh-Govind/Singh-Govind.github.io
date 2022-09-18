@@ -1,17 +1,61 @@
-import { SimpleGrid } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import Icons from "./Icons";
 import { skills } from "./skillDetails";
 import SectionTitle from "../Helper/SectionTitle";
+import { FaReact } from "react-icons/fa";
+import { IoLogoHtml5 } from "react-icons/io";
+import FrontendSkills from "./FrontendSkills";
+import BackendSkills from "./BackendSkills";
+import ToolsSkills from "./ToolsSkills";
+import { MdEngineering } from "react-icons/md";
 
 export default function Skills() {
   return (
     <>
-      {/* <SectionTitle title="Skills" /> */}
-      <SimpleGrid columns={{ base: "2", lg: "3", md: "3", sm: "2" }}>
+      <Box minH="100vh">
+        <SectionTitle title="Skills" IconDetails={MdEngineering} />
+        {/* <SimpleGrid
+        mt="5rem"
+        columns={2}
+        // columns={{ base: "2", lg: "3", md: "3", sm: "2" }}
+      >
         {skills.map((item) => (
           <Icons key={item.id} title={item.title} urls={item.url} />
         ))}
-      </SimpleGrid>
+      </SimpleGrid> */}
+        <SimpleGrid
+          mt="3rem"
+          columns={{ base: "1", lg: "2", md: "2" }}
+          gap="8rem"
+          align="center"
+        >
+          <Box>
+            <Text fontSize="1.8rem" mb="2rem">
+              <span style={{ borderBottom: "1px solid" }}>Frontend</span>
+            </Text>
+            <Box>
+              <FrontendSkills />
+            </Box>
+          </Box>
+          <Box>
+            <Text fontSize="2rem" mb="2rem">
+              <span style={{ borderBottom: "1px solid" }}>Backend</span>
+            </Text>
+            <Box>
+              <BackendSkills />
+            </Box>
+          </Box>
+        </SimpleGrid>
+
+        <SimpleGrid justifyContent="center" mt="5rem">
+          <Box>
+            <Text textAlign="center" fontSize="2rem" mb="2rem">
+              <span style={{ borderBottom: "1px solid" }}>Tools</span>
+            </Text>
+            <ToolsSkills />
+          </Box>
+        </SimpleGrid>
+      </Box>
     </>
   );
 }

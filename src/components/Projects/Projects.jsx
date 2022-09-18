@@ -1,7 +1,8 @@
-import { Box, Container, Heading, Text, useColorMode } from "@chakra-ui/react";
+import { Box, useColorMode } from "@chakra-ui/react";
 import SectionTitle from "../Helper/SectionTitle";
 import Project from "./Project";
 import { projectList } from "./projectLIst";
+import { AiFillProject } from "react-icons/ai";
 
 export default function Projects() {
   const { colorMode } = useColorMode();
@@ -24,7 +25,7 @@ export default function Projects() {
           Projects
         </Text> */}
       <Box marginBlock="5rem 3rem">
-        <SectionTitle title="Projects" />
+        <SectionTitle title="Projects" IconDetails={AiFillProject} />
         {projectList.map((item) => (
           <Project key={item.id} {...item} />
         ))}

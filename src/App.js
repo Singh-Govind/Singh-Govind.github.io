@@ -4,10 +4,10 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
-import Hero from "./components/Hero/Hero";
 import Hero2 from "./components/Hero/Hero2";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+// import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
