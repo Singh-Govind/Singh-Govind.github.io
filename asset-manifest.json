@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.937e2849.css",
-    "main.js": "/static/js/main.71dee191.js",
+    "main.js": "/static/js/main.e96ede3f.js",
     "static/media/hindustan-times.PNG": "/static/media/hindustan-times.009f0a6b72e0fc52c6a9.PNG",
     "static/media/indiamart.PNG": "/static/media/indiamart.1fe32501e5ded3919fba.PNG",
     "static/media/Govind_Singh_resume.pdf": "/static/media/Govind_Singh_resume.194bfe870bb556899edc.pdf",
@@ -10,10 +10,10 @@
     "static/media/ExpressJS.png": "/static/media/ExpressJS.612bf19e2768967b02d9.png",
     "index.html": "/index.html",
     "main.937e2849.css.map": "/static/css/main.937e2849.css.map",
-    "main.71dee191.js.map": "/static/js/main.71dee191.js.map"
+    "main.e96ede3f.js.map": "/static/js/main.e96ede3f.js.map"
   },
   "entrypoints": [
     "static/css/main.937e2849.css",
-    "static/js/main.71dee191.js"
+    "static/js/main.e96ede3f.js"
   ]
 }
