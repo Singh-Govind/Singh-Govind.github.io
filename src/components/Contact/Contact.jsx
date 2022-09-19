@@ -17,14 +17,14 @@ export default function Contact() {
         </Text>
         <ContactListComponent
           title="E-mail"
-          linkdesc="E-mail Me!"
+          linkdesc="govindkmr141@gmail.com"
           IconDetail={HiOutlineMail}
           linkurl="mailto:govindkmr141@gmail.com"
         />
         <ContactListComponent
           title="LinkedIn"
           linkdesc="Find me on LinkedIn"
-          linkurl="https://github.com/in/govindkmr141"
+          linkurl="https://linkedin.com/in/govindkmr141"
           IconDetail={FaLinkedin}
         />
         <ContactListComponent
@@ -39,12 +39,6 @@ export default function Contact() {
           linkurl={Resume}
           IconDetail={FaFilePdf}
         />
-
-        {/* <ContactListComponent
-          title="Call"
-          IconDetail={BsPhone}
-          linkurl="tel:7979761944"
-        /> */}
       </Box>
     </Box>
   );

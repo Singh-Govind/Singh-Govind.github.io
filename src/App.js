@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
+import BackToTop from "./components/Helper/BackToTop";
 import Hero2 from "./components/Hero/Hero2";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
@@ -12,8 +13,10 @@ import Skills from "./components/Skills/Skills";
 function App() {
   return (
     <>
-      <Navbar />
-
+      <Box id="top">
+        <Navbar />
+      </Box>
+      <BackToTop />
       <Hero2 />
       <Container
         maxW={{
