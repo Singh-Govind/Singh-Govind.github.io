@@ -11,12 +11,8 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaUserSecret } from "react-icons/fa";
 import Govind from "../assets/images/Govind.jpg";
 import SectionTitle from "../Helper/SectionTitle";
-import Stats from "./Stats";
-// import ReactTooltip from "react-tooltip";
 
 export default function About() {
-  const { colorMode } = useColorMode();
-
   return (
     <>
       <SectionTitle title="About Me" IconDetails={FaUserSecret} />
@@ -135,7 +131,6 @@ export default function About() {
           />
         </Box>
       </Flex>
-      <Stats />
     </>
   );
 }

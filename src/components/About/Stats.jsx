@@ -1,27 +1,18 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
+import SectionTitle from "../Helper/SectionTitle";
+import { HiOutlinePresentationChartBar } from "react-icons/hi";
 
 export default function Stats() {
   return (
     <>
-      <Box marginBottom="8rem">
-        <Flex
-          sx={{
-            margin: "auto",
-            marginTop: "-4rem",
-            marginBottom: "8rem",
-            justifyContent: "center",
-            width: { base: "90%", lg: "100%", md: "100%" },
-          }}
-        >
-          <GitHubCalendar
-            username="singh-govind"
-            children={<ReactTooltip html />}
-          />
-        </Flex>
-
-        <Box>
+      <Box minHeight="100vh" marginTop="5rem">
+        <SectionTitle
+          title="Statistics"
+          IconDetails={HiOutlinePresentationChartBar}
+        />
+        <Box marginBottom="10rem" mt="3rem">
           <Text textAlign="center" fontSize="1.8rem" mb="2rem">
             <span
               style={{
@@ -104,6 +95,21 @@ export default function Stats() {
             </Box>
           </SimpleGrid>
         </Box>
+
+        <Flex
+          sx={{
+            margin: "auto",
+            marginTop: "-4rem",
+            marginBottom: "8rem",
+            justifyContent: "center",
+            width: { base: "90%", lg: "100%", md: "100%" },
+          }}
+        >
+          <GitHubCalendar
+            username="singh-govind"
+            children={<ReactTooltip html />}
+          />
+        </Flex>
       </Box>
     </>
   );

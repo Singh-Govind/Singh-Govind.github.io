@@ -1,6 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import "./App.css";
 import About from "./components/About/About";
+import Stats from "./components/About/Stats";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
@@ -35,6 +36,9 @@ function App() {
         </Box>
         <Box id="projects">
           <Projects />
+        </Box>
+        <Box id="stats">
+          <Stats />
         </Box>
         <Box id="contact">
           <Contact />

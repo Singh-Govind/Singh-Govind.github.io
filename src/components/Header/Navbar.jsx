@@ -1,22 +1,16 @@
-import { ReactNode } from "react";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
-  Avatar,
   Link,
   Button,
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
-  Center,
-  IconButton,
   Text,
   Container,
 } from "@chakra-ui/react";
@@ -83,6 +77,9 @@ export default function Navbar() {
                   <Link href="#projects">Projects</Link>
                 </Text>
                 <Text fontSize="lg">
+                  <Link href="#stats">Stats</Link>
+                </Text>
+                <Text fontSize="lg">
                   <Link href="#contact">Contact</Link>
                 </Text>
               </Flex>
@@ -123,6 +120,9 @@ export default function Navbar() {
                         </Text>
                         <Text fontSize="lg">
                           <Link href="#projects">Projects</Link>
+                        </Text>
+                        <Text fontSize="lg">
+                          <Link href="#stats">Stats</Link>
                         </Text>
                         <Text fontSize="lg">
                           <Link href="#contact">Contact</Link>
