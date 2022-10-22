@@ -1,4 +1,4 @@
-import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import SectionTitle from "../Helper/SectionTitle";
@@ -12,7 +12,7 @@ export default function Stats() {
           title="Statistics"
           IconDetails={HiOutlinePresentationChartBar}
         />
-        <Box marginBottom="10rem" mt="3rem">
+        <Box marginBottom="5rem" mt="3rem">
           <Text textAlign="center" fontSize="1.8rem" mb="2rem">
             <span
               style={{
@@ -96,11 +96,24 @@ export default function Stats() {
           </SimpleGrid>
         </Box>
 
+        <Box>
+          <Flex
+            flexDir="column"
+            flexWrap="wrap"
+            justifyContent="center"
+            gap="2rem"
+          >
+            <Image src="https://github-readme-stats.vercel.app/api?username=singh-govind&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=true" />
+            <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=singh-govind&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=true&layout=compact" />
+            <Image src="https://github-readme-streak-stats.herokuapp.com/?user=singh-govind&theme=tokyonight&hide_border=false" />
+          </Flex>
+        </Box>
+
         <Flex
           sx={{
             margin: "auto",
-            marginTop: "-4rem",
-            marginBottom: "8rem",
+            marginTop: "5rem",
+            marginBottom: "5rem",
             justifyContent: "center",
             width: { base: "90%", lg: "100%", md: "100%" },
           }}

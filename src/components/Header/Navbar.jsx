@@ -7,7 +7,7 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  useDisclosure,
+  // useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
@@ -15,37 +15,29 @@ import {
   Container,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import resume from "../assets/files/Govind_Singh_resume.pdf";
 import Logo from "./Logo";
-
-// const NavLink = ({ children }: { children: ReactNode }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={"md"}
-//     _hover={{
-//       textDecoration: "none",
-//       bg: useColorModeValue("gray.200", "gray.700"),
-//     }}
-//     href={"#"}
-//   >
-//     {children}
-//   </Link>
-// );
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
+  // const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
 
   return (
     <>
-      <Box bg={useColorModeValue("white", "gray.900")} px={4}>
+      <Box
+        bg={useColorModeValue("white", "gray.900")}
+        px={4}
+        position="fixed"
+        width="100%"
+        zIndex="999"
+        borderBottom={`1px solid ${useColorModeValue("#c9c7c7", "#545151")}`}
+      >
         <Container
           maxW={{
             lg: "container.lg",
             md: "container.md",
             sm: "container.sm",
           }}
-          // sx={{ margin: "1rem auto" }}
         >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <Box>
@@ -57,7 +49,7 @@ export default function Navbar() {
             <Flex alignItems={"center"}>
               <Flex
                 alignItems={"center"}
-                gap="4rem"
+                gap="3rem"
                 mr="2rem"
                 display={{
                   base: "none",
@@ -82,6 +74,23 @@ export default function Navbar() {
                 <Text fontSize="lg">
                   <Link href="#contact">Contact</Link>
                 </Text>
+                <Link textDecoration="none" href={resume}>
+                  <Box
+                    sx={{
+                      padding: "0.4rem 1rem",
+                      cursor: "pointer",
+                      bg: "#48BB78",
+                      color: "white",
+                      fontWeight: "medium",
+                      transition: "0.2s all ease-in-out",
+                      _hover: {
+                        bg: "#29d973",
+                      },
+                    }}
+                  >
+                    RESUME
+                  </Box>
+                </Link>
               </Flex>
 
               <Stack direction={"row"} spacing={7}>
@@ -96,7 +105,6 @@ export default function Navbar() {
                   <Menu>
                     <MenuButton
                       as={Button}
-                      // rounded={"full"}
                       variant={"link"}
                       size={"280px"}
                       cursor={"pointer"}
