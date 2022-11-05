@@ -7,7 +7,7 @@ export default function BackToTop() {
       <Box
         sx={{
           textAlign: "center",
-          backgroundColor: "blue",
+          backgroundColor: "#48BB78",
           padding: "1rem",
           borderTopRightRadius: "50px",
           borderTopLeftRadius: "50px",

@@ -33,7 +33,7 @@ export default function Stats() {
               <Box
                 sx={{
                   fontSize: "2rem",
-                  border: "10px solid blue",
+                  border: "10px solid #48BB78",
                   padding: "2.2rem 1rem",
                   borderRadius: "50%",
                 }}
@@ -49,7 +49,7 @@ export default function Stats() {
               <Box
                 sx={{
                   fontSize: "2rem",
-                  border: "10px solid blue",
+                  border: "10px solid #48BB78",
                   padding: "2.2rem 1.5rem",
                   borderRadius: "50%",
                 }}
@@ -65,7 +65,7 @@ export default function Stats() {
               <Box
                 sx={{
                   fontSize: "2rem",
-                  border: "10px solid blue",
+                  border: "10px solid #48BB78",
                   padding: "2.2rem 2.5rem",
                   borderRadius: "50%",
                 }}
@@ -81,7 +81,7 @@ export default function Stats() {
               <Box
                 sx={{
                   fontSize: "2rem",
-                  border: "10px solid blue",
+                  border: "10px solid #48BB78",
                   padding: "2.2rem 1.5rem",
                   borderRadius: "50%",
                 }}
