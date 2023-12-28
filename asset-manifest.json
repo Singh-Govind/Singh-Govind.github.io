@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.937e2849.css",
-    "main.js": "/static/js/main.947cada0.js",
+    "main.js": "/static/js/main.2e858194.js",
     "static/media/shopeasy.png": "/static/media/shopeasy.13c000edb21711fd21e8.png",
     "static/media/hindustan-times.PNG": "/static/media/hindustan-times.009f0a6b72e0fc52c6a9.PNG",
     "static/media/indiamart.PNG": "/static/media/indiamart.1fe32501e5ded3919fba.PNG",
-    "static/media/Govind_Singh_resume.pdf": "/static/media/Govind_Singh_resume.609f1c845cf0d756d4f9.pdf",
     "static/media/tmetric.png": "/static/media/tmetric.9adfb9e8c65ca0500d3b.png",
+    "static/media/Govind_Singh_resume.pdf": "/static/media/Govind_Singh_resume.f430b9f40827361c0951.pdf",
     "static/media/uboric-clone.PNG": "/static/media/uboric-clone.0be369cc8f80c7650ecb.PNG",
     "static/media/Govind.jpg": "/static/media/Govind.6bdb620be421fea1443e.jpg",
     "index.html": "/index.html",
     "main.937e2849.css.map": "/static/css/main.937e2849.css.map",
-    "main.947cada0.js.map": "/static/js/main.947cada0.js.map"
+    "main.2e858194.js.map": "/static/js/main.2e858194.js.map"
   },
   "entrypoints": [
     "static/css/main.937e2849.css",
-    "static/js/main.947cada0.js"
+    "static/js/main.2e858194.js"
   ]
 }
